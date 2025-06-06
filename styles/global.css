@@ -19,7 +19,7 @@
 }
 
 :root {
-    --brand-gradient: linear-gradient(to right, #FC4A1A, #F7B733);
+    --brand-gradient: linear-gradient(90deg, #FC4A1A, #F7B733);
     --brand-color-primary: #F7B733;
     --brand-color-secondary: #FC4A1A;
 
@@ -36,6 +36,13 @@
     --h3-mobile: 800 1.25rem/120% var(--font-family);
     --span-mobile: 500 .875rem/100% var(--font-family);
     --paragraph-mobile: 400 1rem/160% var(--font-family);
+    --button-mobile: 500 1rem/1.5rem var(--font-family);
+
+    --px-lg: 1.5rem;
+
+    --py-base: 1rem;
+    --py-lg: 1.5rem;
+    --py-xl: 3rem;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -118,5 +125,11 @@ ul[role="list"] {
         --h1-mobile: 800 4rem/120% var(--font-family);
         --h2-mobile: 800 3rem/120% var(--font-family);
         --h3-mobile: 800 2rem/120% var(--font-family);
+
+        --py-base: 1.5rem;
+        --py-lg: 2.5rem;
+        --py-xl: 5rem;
+
+        --px-lg: 2rem;
     }
 }
