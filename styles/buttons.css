@@ -11,7 +11,7 @@
     border-radius: .5rem;
 
     cursor: pointer;
-    font: var(--button-mobile);
+    font: var(--fw-md) var(--fs-base)/1.5rem var(--font-family);
 
     background: var(--btn-bg-color);
     color: var(--btn-color);
@@ -19,7 +19,10 @@
 
 .btn:hover {
     --btn-bg-color: var(--brand-gradient);
-    --btn-color: var(--surface-color);
+
+    -webkit-background-clip: inherit;
+    background-clip: inherit;
+    color: var(--btn-color);
 }
 
 .btn[aria-label] {
@@ -46,12 +49,12 @@
 
 .btn-sm {
     padding: .5rem 1rem;
-    font-size: .875rem;
+    font-size: var(--fs-sm);
 }
 
 .btn-md {
     padding: .75rem 1.5rem;
-    font-size: 1rem;
+    font-size: var(--fs-base);
 }
 
 .btn-lg {
