@@ -1,0 +1,117 @@
+#pricing {
+    --fs-price: 2rem;
+
+    & header {
+        text-align: center;
+    }
+
+    & .card,
+    .premium {
+        margin-top: 2rem;
+    }
+
+    .cards {
+        gap: 2rem;
+    }
+
+    & h3 {
+        font-size: 1.25rem;
+        margin-top: 0;
+    }
+
+    & .card p {
+        margin-top: .25rem;
+    }
+
+    & zin-pricing {
+        display: block;
+        padding-block: 2rem;
+        font: var(--fw-bold) var(--fs-price)/1.2rem var(--font-family);
+    }
+
+    & zin-pricing small {
+        font: var(--fw-base) 1rem/125% var(--font-family);
+        color: var(--text-color-secondary);
+    }
+
+    & .btn {
+        width: 100%;
+
+        &::before {
+            background-color: var(--surface-color);
+        }
+    }
+
+    & .separator {
+        height: 1px;
+        margin-block: 2rem;
+        background: radial-gradient(var(--text-color-secondary), var(--surface-color) 70%);
+    }
+
+    & li {
+        color: var(--text-color-secondary);
+        background: url(../assets/icons/Check.svg) no-repeat;
+        padding-left: 2rem;
+    }
+
+    & ul+small {
+        color: var(--text-color-secondary);
+        display: block;
+        margin-top: 1.5rem;
+        font-size: .875rem;
+    }
+
+    & .premium {
+        position: relative;
+        border-radius: 1.5rem;
+        padding: 2px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: inherit;
+            inset: 0;
+            background: var(--brand-gradient);
+            z-index: -1;
+        }
+
+        & .card {
+            margin-top: 0;
+            padding-top: 4.25rem;
+        }
+
+        & span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--brand-gradient);
+
+            padding: .75rem 2rem;
+            border-top-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            letter-spacing: 0.08rem;
+            color: var(--bg-color);
+            text-transform: uppercase;
+            font: 600 var(--fs-base) var(--font-family);
+        }
+    }
+
+    @media (width >=80em) {
+        --fs-price: 2.5rem;
+
+        & header {
+            max-width: 50rem;
+            margin-inline: auto;
+        }
+
+        & .premium .card {
+            padding-bottom: 6rem;
+        }
+
+        & .card:nth-child(3) {
+            & .separator {
+                margin-block: 1.5rem;
+            }
+        }
+    }
+}
