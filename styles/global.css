@@ -73,6 +73,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-family);
     font-weight: var(--fs-base);
